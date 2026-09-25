@@ -1,0 +1,323 @@
+STRICTNESS VALIDATION SAMPLE  (mark each: Y = model right, N = wrong)
+
+labels: W = wholly excluded, C = conditional, N = not an exclusion
+
+==============================================================================
+CONDITIONAL | confidence lo | n=2398 in this cell
+==============================================================================
+
+ 1. [brain metastases conf=0.11] NCT03086291
+    Has known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Subjects with previously treated brain metastases may participate prov
+    model says: conditional      correct? ___
+
+ 2. [brain metastases conf=0.28] NCT01752023
+    Uncontrolled brain metastases. Patients with brain metastases must have stable neurologic status following local therapy (surgery or radiation) for at least 2 w
+    model says: conditional      correct? ___
+
+ 3. [brain metastases conf=0.02] NCT04770688
+    Spinal cord compression, symptomatic and unstable brain metastases, except for those patients who have completed definitive therapy, and have had a stable neuro
+    model says: conditional      correct? ___
+
+ 4. [HIV conf=0.01] NCT01303926
+    Serious concomitant systemic disorder (for example, active infection including human immunodeficiency virus) that, in the opinion of the investigator, would com
+    model says: conditional      correct? ___
+
+ 5. [prior malignancy conf=0.09] NCT01452334
+    Subjects with concomitant second malignancies (except adequately treated nonmelanomatous skin cancers, ductal carcinoma in situ, treated superficial bladder can
+    model says: conditional      correct? ___
+
+ 6. [HIV conf=0.28] NCT05344833
+    Patients with known history of testing positive for human immunodeficiency virus (HIV) or known acquired immunodeficiency syndrome (AIDS) may be enrolled if the
+    model says: conditional      correct? ___
+
+ 7. [prior malignancy conf=0.30] NCT01191697
+    Patients with a history of other malignancy are not eligible except for the following circumstances: disease-free for at least 3 years and are deemed to be at l
+    model says: conditional      correct? ___
+
+ 8. [brain metastases conf=0.42] NCT03844750
+    Has known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Participants with previously treated brain metastases may participate 
+    model says: conditional      correct? ___
+
+ 9. [prior malignancy conf=0.01] NCT06732505
+    Known other malignancies (except for those without recurrence within 5 years after adequate treatment).
+    model says: conditional      correct? ___
+
+10. [brain metastases conf=0.09] NCT01252251
+    Uncontrolled brain or leptomeningeal metastases, including patients who continue to require glucocorticoids for brain or leptomeningeal metastases. Treated brai
+    model says: conditional      correct? ___
+
+11. [prior malignancy conf=0.47] NCT06100874
+    Individuals with a history of other malignancies are eligible if they have been disease-free for at least 3 years or are deemed by the investigator to be at low
+    model says: conditional      correct? ___
+
+12. [prior malignancy conf=0.02] NCT02915523
+    Another known malignancy that is progressing or requires active treatment (excluding adequately treated basal cell carcinoma or cervical intraepithelial neoplas
+    model says: conditional      correct? ___
+
+13. [prior malignancy conf=0.02] NCT00553150
+    Other active cancers requiring therapy to control disease or prior cancer diagnoses which pose a greater than 30% risk of death within the next 2 years
+    model says: conditional      correct? ___
+
+14. [brain metastases conf=0.20] NCT01382706
+    Patients with brain metastasis can only be included if they were treated more than 4 weeks prior to enrollment; subjects with treated brain metastases must have
+    model says: conditional      correct? ___
+
+15. [brain metastases conf=0.44] NCT05005728
+    Have known active central nervous system metastases and/or carcinomatous meningitis. Subjects with previously treated brain metastases may participate provided 
+    model says: conditional      correct? ___
+
+16. [prior malignancy conf=0.04] NCT04250051
+    Patients who have prior history of malignancy, other than MDS, MPN, or AML are not eligible unless the subject has been free of the disease for \>= 1 year prior
+    model says: conditional      correct? ___
+
+17. [prior malignancy conf=0.20] NCT01034631
+    Prior cancer treatment must be completed at least 14 days prior to registration for protocol therapy and the patient must have recovered from the acute toxic ef
+    model says: conditional      correct? ___
+
+18. [prior malignancy conf=0.10] NCT02685059
+    Previous malignant disease being disease-free for less than 5 years (except CIS of the cervix and non-melanomatous skin cancer).
+    model says: conditional      correct? ___
+==============================================================================
+NOT AN EXCLUSION | confidence hi | n=2 in this cell
+==============================================================================
+
+19. [brain metastases conf=0.74] NCT02145637
+    Untreated symptomatic brain metastasis
+    model says: not an exclusion      correct? ___
+
+20. [hepatitis B/C conf=0.77] NCT06347653
+    Active hepatitis \[Hepatitis B: Hepatitis B virus (HBV) deoxyribonucleic acid (DNA) positive and ALT above the upper limit of detection; Hepatitis C: Hepatitis 
+    model says: not an exclusion      correct? ___
+==============================================================================
+NOT AN EXCLUSION | confidence lo | n=21264 in this cell
+==============================================================================
+
+21. [brain metastases conf=0.06] NCT00914914
+    Brain Metastases, current or past (unless treated at least one year prior to enrollment).
+    model says: not an exclusion      correct? ___
+
+22. [brain metastases conf=0.07] NCT05848765
+    Current or prior CNS involvement with lymphoma
+    model says: not an exclusion      correct? ___
+
+23. [HIV conf=0.02] NCT01462513
+    Known or newly diagnosed active hepatitis B infection and/or hepatitis C infection, autoimmune hepatitis, known human immunodeficiency virus infection, or any o
+    model says: not an exclusion      correct? ___
+
+24. [HIV conf=0.14] NCT02085629
+    HIV-positive, EBV-negative or suffering chronic viral hepatitis
+    model says: not an exclusion      correct? ___
+
+25. [prior malignancy conf=0.12] NCT06290388
+    History of another malignancy in the previous 2 years, unless cured by surgery alone and continuously disease free.
+    model says: not an exclusion      correct? ___
+
+26. [brain metastases conf=0.14] NCT06756841
+    Patients with active leptomeningeal disease or brain metastasis.
+    model says: not an exclusion      correct? ___
+
+27. [prior malignancy conf=0.12] NCT05717400
+    Note: The time requirement does not apply to participants who underwent successful definitive resection of basal cell carcinoma of the skin, superficial bladder
+    model says: not an exclusion      correct? ___
+
+28. [brain metastases conf=0.21] NCT01257139
+    Presence of symptomatic brain metastases.
+    model says: not an exclusion      correct? ___
+
+29. [prior malignancy conf=0.09] NCT05544019
+    Subject has previous invasive malignancy in the last 2 years.
+    model says: not an exclusion      correct? ___
+
+30. [brain metastases conf=0.14] NCT05948475
+    Subjects with known brain or central nervous system (CNS) metastases that have radiologically or clinically progressed in the 28 days prior to initiation of the
+    model says: not an exclusion      correct? ___
+
+31. [brain metastases conf=0.18] NCT04076059
+    Subject has known or suspected brain metastasis or active leptomeningeal disease.
+    model says: not an exclusion      correct? ___
+
+32. [HIV conf=0.26] NCT00983528
+    Patients with any known or suspected Hepatitis B, C and HIV infections.
+    model says: not an exclusion      correct? ___
+
+33. [prior malignancy conf=0.20] NCT02027376
+    Patients with a second primary malignancy that is clinically detectable at the time of consideration for study enrollment.
+    model says: not an exclusion      correct? ___
+
+34. [brain metastases conf=0.14] NCT00887809
+    Patients with known brain metastases
+    model says: not an exclusion      correct? ___
+
+35. [HIV conf=0.15] NCT05824663
+    With severe or uncontrolled systemic diseases, including uncontrolled hypertension, uncontrolled diabetes mellitus, active bleeding diatheses, or active infecti
+    model says: not an exclusion      correct? ___
+
+36. [prior malignancy conf=0.08] NCT01496534
+    Prior cancer treatment must be completed at least 30 days prior to being registered for protocol therapy and the subject must have recovered from the acute toxi
+    model says: not an exclusion      correct? ___
+
+37. [prior malignancy conf=0.18] NCT02446600
+    Prior cancer treated with a curative intent with no evidence of recurrent disease 3 years following diagnosis and judged by the investigator to be at low risk o
+    model says: not an exclusion      correct? ___
+
+38. [hepatitis B/C conf=0.04] NCT04070768
+    Patients who are positive for hepatitis B or C infection with the exception of those with an undetectable viral load within 3 months. Subjects with serologic ev
+    model says: not an exclusion      correct? ___
+==============================================================================
+WHOLLY EXCLUDED | confidence hi | n=163 in this cell
+==============================================================================
+
+39. [HIV conf=0.75] NCT01264081
+    Human immunodeficiency virus (HIV)-positive patients on antiretroviral therapy are excluded because most antiretrovirals are strong or moderate CYP3A4 inhibitor
+    model says: wholly excluded      correct? ___
+
+40. [HIV conf=0.83] NCT04659616
+    PRE-SCREENING EXCLUSION CRITERIA: Untreated human immunodeficiency virus (HIV) or active hepatitis C detectable by PCR, or chronic hepatitis B
+    model says: wholly excluded      correct? ___
+
+41. [hepatitis B/C conf=0.73] NCT01084057
+    Patients with chronic hepatitis B or C are also excluded from this study
+    model says: wholly excluded      correct? ___
+
+42. [brain metastases conf=0.74] NCT05275673
+    Patients with symptomatic, active/untreated central nervous system metastasis and/or leptomeningeal disease are not eligible.
+    model says: wholly excluded      correct? ___
+
+43. [prior malignancy conf=0.73] NCT02494570
+    Uncontrolled serious medical or psychiatric illness. Patients with a "currently active" second malignancy other than non-melanoma skin cancers, carcinoma in sit
+    model says: wholly excluded      correct? ___
+
+44. [prior malignancy conf=0.70] NCT04467515
+    Other malignancies within the past 3 years except for adequately treated carcinoma of the cervix or basal or squamous cell carcinomas of the skin or stage I ute
+    model says: wholly excluded      correct? ___
+
+45. [HIV conf=0.72] NCT01828762
+    Excluding hepatitis, any active or unresolved infection including HIV, EBV, CMV, RPR, TB, etc.
+    model says: wholly excluded      correct? ___
+
+46. [HIV conf=0.80] NCT00669734
+    Human immunodeficiency virus (HIV)-positive patients and patients with hepatitis B and C are ineligible because of likely reduced immune competence which could 
+    model says: wholly excluded      correct? ___
+
+47. [hepatitis B/C conf=0.79] NCT05039073
+    Patients with hepatitis B (positive hepatitis B virus surface antigen \[HBsAg\] or hepatitis B virus core antibody \[HBcAb\]) and those with positive hepatitis 
+    model says: wholly excluded      correct? ___
+
+48. [HIV conf=0.81] NCT01924260
+    Patients with a diagnosis of active human immunodeficiency virus (HIV) infection, on anti-retroviral therapy, or with a cluster of differentiation (CD) 4 count 
+    model says: wholly excluded      correct? ___
+
+49. [prior malignancy conf=0.71] NCT03137888
+    Patients with a history of any other invasive cancer (except non-melanoma skin cancer and excluding carcinoma in-situ), unless in complete remission and off of 
+    model says: wholly excluded      correct? ___
+
+50. [brain metastases conf=0.77] NCT01080248
+    Patient has known brain metastases; these patients are excluded from this clinical trial because of their poor prognosis and because they often develop progress
+    model says: wholly excluded      correct? ___
+
+51. [hepatitis B/C conf=0.72] NCT04599634
+    Hepatitis B surface antigen or hepatitis B deoxyribonucleic acid (DNA) polymerase chain reaction (PCR) positive. NOTE: Subjects who are hepatitis B core antibod
+    model says: wholly excluded      correct? ___
+
+52. [HIV conf=0.75] NCT00757692
+    Patients with immune deficiency are at increased risk of lethal infections when treated with Marrow-suppressive therapy. Therefore, HIV positive patients receiv
+    model says: wholly excluded      correct? ___
+
+53. [prior malignancy conf=0.78] NCT05367687
+    Known hepatocholangiocarcinoma, sarcomatoid HCC, mixed cell carcinoma and fibrolamellar HCC; other active malignant tumor except HCC within 5 years or simultane
+    model says: wholly excluded      correct? ___
+
+54. [brain metastases conf=0.83] NCT00757692
+    Patients with known brain metastases or leptomemingeal disease are excluded from this clinical trial because of their poor prognosis and because they often deve
+    model says: wholly excluded      correct? ___
+
+55. [hepatitis B/C conf=0.82] NCT06321484
+    Individuals with active uncontrolled hepatitis B or C are ineligible as they are at high-risk of lethal treatment-related hepatotoxicity in the setting of marro
+    model says: wholly excluded      correct? ___
+
+56. [HIV conf=0.84] NCT01768897
+    Patients with known human immunodeficiency virus (HIV) infection; (Note: Patients with known HIV infection are excluded because patients with an immune deficien
+    model says: wholly excluded      correct? ___
+==============================================================================
+WHOLLY EXCLUDED | confidence lo | n=9092 in this cell
+==============================================================================
+
+57. [HIV conf=0.05] NCT05609968
+    Has history of human immunodeficiency virus (HIV) infection
+    model says: wholly excluded      correct? ___
+
+58. [HIV conf=0.38] NCT06341907
+    The patient has HIV infection, HBV infection, HCV infection, uncontrolled coronary artery disease or asthma, uncontrolled cerebrovascular disease, or other dise
+    model says: wholly excluded      correct? ___
+
+59. [hepatitis B/C conf=0.10] NCT05001347
+    Known active or chronic Hepatitis B or Hepatitis C, other hepatitides (non-alcohol steatohepatitis, alcohol or drug-related, autoimmune) serology at screening o
+    model says: wholly excluded      correct? ___
+
+60. [brain metastases conf=0.37] NCT02987166
+    Known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Subjects with untreated brain metastases and patients who have had brain m
+    model says: wholly excluded      correct? ___
+
+61. [HIV conf=0.23] NCT05248685
+    Screened to be positive of infection of hepatitis (including hepatitis B and C), AIDS or syphilis;
+    model says: wholly excluded      correct? ___
+
+62. [hepatitis B/C conf=0.16] NCT04763616
+    Patient has hepatitis B virus (HBV) associated liver disease as follows - Liver cirrhosis and chronic hepatitis with HBV reactivation - Hepatitis B virus (HBV) 
+    model says: wholly excluded      correct? ___
+
+63. [hepatitis B/C conf=0.10] NCT04177823
+    Presence of hepatitis B surface antigen (HBsAg), or hepatitis B core antibody (HBcAb at screening or within 3 months prior to first dose of study intervention).
+    model says: wholly excluded      correct? ___
+
+64. [brain metastases conf=0.36] NCT03082209
+    Participants with history of brain metastases who have not shown clinical and radiographic stable disease for at least 28 days after definitive therapy. In addi
+    model says: wholly excluded      correct? ___
+
+65. [brain metastases conf=0.05] NCT02482441
+    Uncontrolled seizure disorder, active neurologic disease, or active CNS involvement except for individuals who have previously treated CNS metastases, are asymp
+    model says: wholly excluded      correct? ___
+
+66. [brain metastases conf=0.16] NCT01846416
+    Leptomeningeal disease
+    model says: wholly excluded      correct? ___
+
+67. [prior malignancy conf=0.37] NCT02554812
+    Diagnosis of other malignancy within 5 years, except for adequately treated basal cell or squamous cell skin cancer, or carcinoma in situ of the breast or cervi
+    model says: wholly excluded      correct? ___
+
+68. [brain metastases conf=0.17] NCT01273051
+    Uncontrolled active infection, compromised immune status, psychosis, or CNS disease.
+    model says: wholly excluded      correct? ___
+
+69. [HIV conf=0.20] NCT03195764
+    Known human immunodeficiency virus infection.
+    model says: wholly excluded      correct? ___
+
+70. [HIV conf=0.04] NCT06644313
+    1\. Previously received targeted therapy (including TKI or monoclonal antibodies), immunotherapy, or any investigational drug treatment for NSCLC; 2.Pathologica
+    model says: wholly excluded      correct? ___
+
+71. [hepatitis B/C conf=0.12] NCT06241898
+    Active hepatitis B or hepatitis C infection, demonstrated by positive serology or requiring treatment. Subjects who are anti-HBs/HBcAb (+) without detectable HB
+    model says: wholly excluded      correct? ___
+
+72. [brain metastases conf=0.48] NCT03126630
+    Patients with known brain metastases with progressive neurologic dysfunction, requirement of steroids and lack of improvement on head imaging obtained prior to 
+    model says: wholly excluded      correct? ___
+
+73. [prior malignancy conf=0.08] NCT04390945
+    Patients with other malignant tumors within 5 years (except basal cell carcinoma of the skin and cervical carcinoma in situ);
+    model says: wholly excluded      correct? ___
+
+74. [prior malignancy conf=0.20] NCT02842580
+    Other previous malignancies within 5 years, except for basal cell carcinoma of the skin or pre-invasive carcinoma of the cervix - Peritoneal macro-nodular carci
+    model says: wholly excluded      correct? ___
+
+
+74 items. Counts of each cell in the full set:
+   not an exclusion     lo   21264
+   wholly excluded      lo    9092
+   conditional          lo    2398
+   wholly excluded      hi     163
+   not an exclusion     hi       2

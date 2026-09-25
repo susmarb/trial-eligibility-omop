@@ -1,0 +1,21 @@
+# Fill in the authors and, once a release is archived, the DOI.
+# Zenodo mints a DOI automatically for a tagged GitHub release once the
+# repository is linked: https://zenodo.org/account/settings/github/
+cff-version: 1.2.0
+title: "trial-eligibility-omop: eligibility criteria as an executable logic tree over OMOP"
+message: "If you use this software, please cite it."
+type: software
+authors:
+  - given-names: "Susana"
+    family-names: "Martínez Arbas"
+    orcid: "https://orcid.org/0000-0001-7309-8190"
+repository-code: "https://github.com/susmarb/trial-eligibility-omop"
+license: MIT
+version: 0.1.0
+date-released: "2026-09-22"
+keywords:
+  - OMOP
+  - OHDSI
+  - clinical trials
+  - eligibility criteria
+  - cohort definition

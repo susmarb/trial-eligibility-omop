@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trial-eligibility-omop"
+version = "0.1.0"
+description = "Parse clinical trial eligibility criteria into a logic tree, anchor it to OMOP standard concepts, and execute it as a cohort."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+keywords = ["OMOP", "OHDSI", "clinical trials", "eligibility criteria", "cohort"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Programming Language :: Python :: 3",
+]
+# The core is deliberately dependency-free: standard library only, so it runs
+# anywhere, including inside a secure processing environment with no package
+# index. Optional extras below cover the local classifier and the tooling.
+dependencies = []
+
+[project.optional-dependencies]
+# Apple Silicon only, and only needed for `strictness` and `map`.
+classifier = ["mlx>=0.18", "mlx-lm>=0.18"]
+dev = ["ruff>=0.5"]
+
+[project.scripts]
+trialcriteria = "trialcriteria.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+# UP031 is deliberately not enabled: this codebase uses %-formatting
+# consistently, and converting it would rewrite working, tested code for style.
+ignore = ["E741"]

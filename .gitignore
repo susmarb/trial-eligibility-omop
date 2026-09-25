@@ -1,0 +1,21 @@
+# cached registry data, model output, the SQLite CDM. All rebuildable.
+.cache/
+*.sqlite
+
+# local configuration: paths and endpoints differ per machine
+.env
+
+# python
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.ruff_cache/
+.venv/
+venv/
+
+# editors, OS
+.DS_Store
+.idea/
+.vscode/
