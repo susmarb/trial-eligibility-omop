@@ -1,68 +1,79 @@
-# The blocking task
+# Manual annotation and validation
 
-`strictness-sheet-unmarked.txt` holds **74 classifications drawn by
-`trialcriteria validate`**, stratified by label and by confidence band. Nobody
-has marked them.
+`strictness-sheet-unmarked.txt` contains 74 items selected for manual review,
+stratified by the model’s label and confidence band. The sheet is awaiting human
+annotation.
 
-Until they are marked, the classifier's accuracy is unmeasured and every number
-resting on it is provisional. This is the single thing blocking a write-up.
+In this step, a person independently assigns a label to each criterion. These
+annotations are then compared with the classifier’s predictions to assess its
+accuracy. Until this assessment is complete, findings based on those predictions
+remain preliminary.
 
-## How to mark it
+## How to annotate the sheet
 
-Each item shows a criterion. Write `W`, `C`, `N` or `?` on its `you:` line.
+Read each criterion and write `W`, `C`, `N` or `?` on its `you:` line.
 
-| | the sentence says |
+| Label | Meaning |
 |---|---|
-| **W** wholly excluded | anyone with the condition is barred, no route back in |
-| **C** conditional | barred *unless / except / provided that / eligible if* something holds |
-| **N** not an exclusion | this sentence does not exclude for that condition at all |
-| **?** | genuinely unresolvable from the sentence alone |
+| **W** wholly excluded | The sentence excludes people with the condition without stating an exception. |
+| **C** conditional | Participation is possible under stated conditions, often introduced by *unless*, *except*, *provided that* or *eligible if*. |
+| **N** not an exclusion | The sentence does not exclude people on the basis of this condition. |
+| **?** unresolved | The sentence alone does not provide enough information to assign a label. |
 
-The judgement is **grammatical, not clinical**: does the sentence carry an escape
-hatch? Most resolve on one reading. A handful of `?` is a result, not a failure.
-Do not look the trial up; the classifier could not either.
+The review concerns the wording of the criterion rather than a clinical decision
+about a patient. Look for conditions or exceptions that affect participation.
+Use `?` where the wording is unclear; these items are recorded separately.
 
-Then:
+Please assign labels independently, without consulting the model’s answer key
+or looking up the trial. The annotations should be provided by a person rather
+than another model.
+
+## How the sheet is prepared
+
+The sheet is blinded: predictions are stored in a separate answer key so they
+do not influence the reviewer’s labels. An earlier version displayed the model’s
+answer alongside each item and is no longer used for validation.
+
+The criterion text is recovered by re-parsing the source trial. This preserves
+qualifying clauses that may have been omitted from the earlier 160-character
+excerpts, including exceptions introduced near the end of a sentence.
+
+For criteria longer than the classifier’s 400-character input window, the sheet
+marks where the model’s input ended. The scoring report identifies disagreements
+among these longer items for further review. Such a disagreement may relate to
+missing context, but length alone does not establish its cause.
+
+## Scoring the annotations
+
+Keep a working copy of the sheet for your annotations. Once it has been reviewed,
+compare it with the exact answer key generated for that sheet:
 
 ```bash
-trialcriteria score strictness-sheet-unmarked.txt
+trialcriteria score marked-sheet.txt --key /path/to/matching-key.json
 ```
 
-Marks are read as `<number> <letter>`, so marking the sheet in place and writing
-a bare list of answers both work.
+Replace the file paths with those for your marked sheet and its matching key.
+The key is stored separately and is not included with the supplied sheet. A key
+from a different sample cannot be substituted.
 
-## Two properties this sheet has, and why
+You can annotate the `you:` lines directly or provide a numbered list of answers,
+such as `12 C`. Unresolved and unanswered items are reported separately.
 
-**It is blinded.** The model's answer is not on the sheet; it goes to a separate
-answer key at draw time. An annotator shown a label agrees with it more often
-than one who is not, so an unblinded sheet measures suggestibility rather than
-accuracy. An earlier version of this file printed `model says: conditional` next
-to every item and should not have been marked.
+## Interpreting the results
 
-**It carries the full criterion.** The stored classification keeps a truncated
-copy, and the truncation falls at the *end* of the sentence, which is exactly
-where the escape hatch lives. Marking from it was biased against the conditional
-label, the one the whole finding rests on. The full text is recovered by
-re-parsing the source trial, which needs no model run.
+The report includes sample accuracy with a Wilson confidence interval, results
+for each human-assigned label, and a confusion matrix showing how human labels
+compare with model predictions. Differences between “wholly excluded” and
+“conditional” are particularly relevant to the exclusion-wording analysis.
 
-Where a criterion runs past the classifier's own 400-character input window, the
-sheet marks the cut point. Text past it was never shown to the model, so a
-disagreement there is a **window problem, not a classifier error**, and `score`
-counts the two separately.
+Because the sample is stratified by model label and confidence band, its overall
+accuracy is not automatically representative of the full corpus. Review the
+per-label results, unresolved items and input-window limitations alongside the
+overall percentage.
 
-## What the answer feeds
+## Reviewing confidence scores
 
-Overall accuracy with a Wilson interval, accuracy per label, and the confusion
-matrix. The confusion matrix matters most: the finding *is* a shift between
-wholly-excluded and conditional, so a systematic confusion between exactly those
-two labels could produce the entire trend on its own. `score` calls that case out
-by name.
-
-## Note on confidence
-
-In the full run, **165 of 32,919 classifications exceeded 0.7 confidence**, half
-a percent, while the labels were largely correct on inspection. Confidence
-thresholding looks unusable on this task, which matters because calibration is
-the headline claim for this class of model. `score` reports accuracy by band so
-that claim gets tested rather than assumed. Do not treat a low-confidence item as
-a wrong one: that assumption is what the marking exists to check.
+In the original analysis, 165 of 32,919 classifications had confidence scores
+above 0.7. The relationship between these scores and correctness still needs to
+be assessed. The scoring report groups results by confidence band to support
+that comparison; a low score does not necessarily mean that a label is wrong.
