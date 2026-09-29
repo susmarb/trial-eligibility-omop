@@ -39,7 +39,7 @@ The tests need no network connection, classifier or downloaded data. The first
 runs of `make tree` and `make cohort` need internet access. The cohort example
 uses synthetic records and does not require a database server or an API key.
 
-## Part 1: [Retrieval of clinical trial records](src/trialcriteria/ctgov.py)
+## Part 1: Retrieval of clinical trial records
 
 Trial records are retrieved from the ClinicalTrials.gov API and cached locally.
 An individual trial can be selected by its NCT identifier. For the oncology
@@ -54,7 +54,7 @@ trialcriteria show NCT03432533
 trialcriteria fetch-corpus
 ```
 
-## Part 2: [Parsing of eligibility criteria into a logic tree](src/trialcriteria/tree.py)
+## Part 2: Parsing of eligibility criteria into a logic tree
 
 In this step, inclusion and exclusion criteria are separated and nested groups
 are retained. The parser uses indentation and phrases such as “any of the
@@ -81,7 +81,7 @@ are tested separately from the database demonstration in Part 4.
 * [test_tree.py](tests/test_tree.py) tests parsing and nested groups.
 * [test_kleene.py](tests/test_kleene.py) tests three-valued evaluation.
 
-## Part 3: [Mapping clinical terms to OMOP concepts](src/trialcriteria/omop.py)
+## Part 3: Mapping clinical terms to OMOP concepts
 
 OMOP provides a common structure and standard vocabularies for observational
 healthcare data. Here, candidate concepts are retrieved from an OHDSI vocabulary
@@ -107,7 +107,7 @@ trialcriteria map --nct NCT03432533
 
 This command needs a vocabulary service and the optional classifier.
 
-## Part 4: [Execution of a cohort example](src/trialcriteria/cohort.py)
+## Part 4: Execution of a cohort example
 
 The cohort example downloads OHDSI's Eunomia GiBleed dataset, loads the CSV tables
 into SQLite, and selects people using recorded conditions and their vocabulary
@@ -141,7 +141,7 @@ make cohort
 trialcriteria cohort    # repeat the example using the existing database
 ```
 
-## Part 5: [Analysis of exclusion wording](src/trialcriteria/strictness.py)
+## Part 5: Analysis of exclusion wording
 
 This analysis examines how oncology trial criteria describe exclusions relating
 to HIV, hepatitis B/C, brain metastases and prior malignancy. The classifier
