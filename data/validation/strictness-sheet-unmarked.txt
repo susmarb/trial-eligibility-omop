@@ -1,0 +1,486 @@
+STRICTNESS VALIDATION SHEET
+==============================================================================
+
+For each criterion below, decide how it treats patients with the named
+condition, and write your answer on the `you:` line.
+
+    W   wholly excluded   anyone with the condition is barred, no route back in
+    C   conditional       barred UNLESS / EXCEPT / PROVIDED THAT something holds
+    N   not an exclusion  this sentence does not exclude for that condition
+    ?   genuinely unresolvable from the sentence
+
+The judgement is grammatical, not clinical: does the sentence carry an escape
+hatch? A handful of `?` is a result, not a failure. Do not look up the trial.
+
+The model's answers are NOT on this sheet, on purpose. Score with:
+
+    trialcriteria score <this file>
+
+==============================================================================
+ 1. [prior malignancy] NCT04096690
+    History of malignancy except for basal cell or squamous cell carcinoma of the skin or carcinoma in situ of the cervix 3 years prior to study treatment
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 2. [prior malignancy] NCT05717400
+    Note: The time requirement does not apply to participants who underwent successful definitive resection of basal cell carcinoma of the skin, superficial bladder cancer,squamous cell carcinoma of the skin, in situ cervical cancer, in situ breast cancer, or other in situ cancers.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 3. [prior malignancy] NCT02494570
+    Uncontrolled serious medical or psychiatric illness. Patients with a "currently active" second malignancy other than non-melanoma skin cancers, carcinoma in situ of the cervix, resected incidental prostate cancer (staged pT2 with Gleason Score ≤ 6 and postoperative PSA \<0.5 ng/mL), or other adequately treated carcinoma-in-situ are ineligible. Patients are not considered to have a "currently activ
+  <<< the classifier saw nothing past this point >>>
+    e" malignancy if they have completed therapy and are free of disease for ≥1 year).
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 4. [brain metastases] NCT00939770
+    Patients with central nervous system (CNS) tumors or known CNS metastases are not eligible; patients with a history of CNS metastases that have been surgically resected are eligible only if the baseline evaluation shows no evidence of current CNS metastases; patients with any evidence of CNS metastases on baseline evaluation are not eligible, regardless of whether the lesions have been previously 
+  <<< the classifier saw nothing past this point >>>
+    treated and/or appear stable
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 5. [brain metastases] NCT01225172
+    Known symptomatic brain metastasis
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 6. [HIV] NCT01560923
+    Human immunodeficiency virus (HIV)-positive patients and those with other acquired/inherited immunodeficiency
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 7. [hepatitis B/C] NCT05380713
+    Known active hepatitis infection, positive hepatitis C virus (HCV) antibody, hepatitis B virus (HBV) surface antigen (HBsAg) or HBV core antibody (anti-HBc), at screening. Participants with a past or resolved HBV infection (defined as the presence of anti HBc and absence of HBsAg) are eligible. Participants positive for HCV antibody are eligible only if polymerase chain reaction is negative for HC
+  <<< the classifier saw nothing past this point >>>
+    V RNA. Adjust wording as necessary and consider evaluating at screening for studies with known hepatotoxicity or other relevant requirements.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 8. [brain metastases] NCT01752023
+    Uncontrolled brain metastases. Patients with brain metastases must have stable neurologic status following local therapy (surgery or radiation) for at least 2 weeks, and must be without neurologic dysfunction that would confound the evaluation of neurologic and other adverse events.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+ 9. [HIV] NCT02085629
+    HIV-positive, EBV-negative or suffering chronic viral hepatitis
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+10. [brain metastases] NCT02267863
+    Uncontrolled leptomeningeal disease, auto-immune hemolytic anemia and uncontrolled and clinical significant disease related metabolic disorder
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+11. [brain metastases] NCT05848765
+    Current or prior CNS involvement with lymphoma
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+12. [HIV] NCT01807182
+    Clinically significant autoimmune disorders or conditions of immunosuppression; patients with AIDS or HIV-1 associated complex or known to HIV antibody seroposi
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+13. [hepatitis B/C] NCT05001347
+    Known active or chronic Hepatitis B or Hepatitis C, other hepatitides (non-alcohol steatohepatitis, alcohol or drug-related, autoimmune) serology at screening or cirrhosis
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+14. [brain metastases] NCT01257139
+    Presence of symptomatic brain metastases.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+15. [hepatitis B/C] NCT05423262
+    Patients who are positive for HCV RNA
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+16. [HIV] NCT05344833
+    Patients with known history of testing positive for human immunodeficiency virus (HIV) or known acquired immunodeficiency syndrome (AIDS) may be enrolled if the viral load by polymerase chain reaction (PCR) is undetectable with active treatment and absolute lymphocyte count ≥ 350/ul. Antiviral therapy for HIV should continue throughout the study.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+17. [brain metastases] NCT03217253
+    Symptomatic or untreated leptomeningeal or brain metastases or spinal cord compression as documented by computed tomography (CT) or magnetic resonance imaging (MRI) scan, analysis of cerebrospinal fluid or neurological exam; patients with primary glioblastoma multiforme are excluded
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+18. [HIV] NCT02427581
+    Known HIV-positive status. These patients are ineligible because of the potential inability to generate an immune response to vaccines.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+19. [brain metastases] NCT03236883
+    Brain metastasis or Primary central nervous system malignancy
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+20. [HIV] NCT04659616
+    PRE-SCREENING EXCLUSION CRITERIA: Untreated human immunodeficiency virus (HIV) or active hepatitis C detectable by PCR, or chronic hepatitis B
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+21. [brain metastases] NCT01768338
+    No known leptomeningeal involvement by lymphoma or current metastatic brain disease.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+22. [HIV] NCT00702689
+    Human immunodeficiency virus (HIV)-positive patients on combination antiretroviral therapy are ineligible because of the potential for pharmacokinetic interactions with imatinib mesylate and the possibility of associated severe immunosuppression.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+23. [prior malignancy] NCT01191697
+    Patients with a history of other malignancy are not eligible except for the following circumstances: disease-free for at least 3 years and are deemed to be at low risk for recurrence of that malignancy; cervical cancer in situ, basal cell or squamous cell carcinoma of the skin that was treated with curative intent within the past 5 years.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+24. [prior malignancy] NCT05544019
+    Subject has previous invasive malignancy in the last 2 years.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+25. [prior malignancy] NCT01452334
+    Subjects with concomitant second malignancies (except adequately treated nonmelanomatous skin cancers, ductal carcinoma in situ, treated superficial bladder cancer or prostate cancer or in situ cervical cancers) are excluded unless a complete remission was achieved at least 3 years prior to study entry and no additional therapy is required or anticipated to be required during the study period
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+26. [brain metastases] NCT03252938
+    Cerebral or leptomeningeal metastases Note: Subjects with previously treated brain metastases may participate if they meet the following criteria: 1) are stable for at least 28 days prior to the first dose of study treatment and if all neurologic symptoms returned to baseline; 2) have no evidence of new or enlarging brain metastases; and 3) have not been using steroids for at least 7 days prior to
+  <<< the classifier saw nothing past this point >>>
+     first dose of study treatment. This exception does not include carcinomatous meningitis which is excluded regardless of clinical stability.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+27. [HIV] NCT05248685
+    Screened to be positive of infection of hepatitis (including hepatitis B and C), AIDS or syphilis;
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+28. [prior malignancy] NCT05979298
+    Other malignancies, with the exception of malignancies treated more than 5 years ago without signs of return of the disease.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+29. [HIV] NCT01080248
+    Patient is known HIV-positive. These patients are at increased risk of lethal infections when treated with marrow-suppressive therapy.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+30. [hepatitis B/C] NCT06347653
+    Active hepatitis \[Hepatitis B: Hepatitis B virus (HBV) deoxyribonucleic acid (DNA) positive and ALT above the upper limit of detection; Hepatitis C: Hepatitis C virus (HCV) ribonucleic acid (RNA) positive and ALT above the upper limit of detection\]; co-infection with Hepatitis B and Hepatitis C;
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+31. [prior malignancy] NCT01427114
+    Any other malignancies within the past 5 years except for curatively treated non-melanoma skin cancer or in situ carcinoma of the cervix uteri
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+32. [prior malignancy] NCT06290388
+    History of another malignancy in the previous 2 years, unless cured by surgery alone and continuously disease free.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+33. [prior malignancy] NCT00553150
+    Other active cancers requiring therapy to control disease or prior cancer diagnoses which pose a greater than 30% risk of death within the next 2 years
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+34. [prior malignancy] NCT02388906
+    History of carcinomatosis meningitis
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+35. [brain metastases] NCT06321913
+    Symptomatic central nervous system metastases. Subjects with asymptomatic brain metastases (i.e., no neurological symptoms, no need for glucocorticoid treatment, and brain metastases ≤1.5 cm) or subjects with stable symptoms after treatment of brain metastases need to meet all the following criteria to participate This study: No midbrain, pontine, cerebellar, meningeal, medulla or spinal cord meta
+  <<< the classifier saw nothing past this point >>>
+    stases; clinical status remains stable for at least 4 weeks, clinical evidence confirms no new or expanding brain metastases, and corticosteroids are discontinued before the first dose of study drug and anticonvulsant medication for at least 2 weeks. Note: The central nervous system is not a target lesion.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+36. [HIV] NCT06478381
+    HIV antibody positive patients
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+37. [prior malignancy] NCT06732505
+    Known other malignancies (except for those without recurrence within 5 years after adequate treatment).
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+38. [brain metastases] NCT03086291
+    Has known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Subjects with previously treated brain metastases may participate provided they are stable (without evidence of progression by imaging for at least four weeks prior to the first dose of trial treatment and any neurologic symptoms have returned to baseline), have no evidence of new or enlarging brain metastase
+  <<< the classifier saw nothing past this point >>>
+    s, and are not using steroids for at least 7 days prior to trial treatment. This exception does not include carcinomatous meningitis which is excluded regardless of clinical stability.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+39. [HIV] NCT01462513
+    Known or newly diagnosed active hepatitis B infection and/or hepatitis C infection, autoimmune hepatitis, known human immunodeficiency virus infection, or any other infectious process that in the opinion of the investigator could compromise the subject's ability to mount an immune response, or expose him/ her to likelihood of more and/or severe side effects.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+40. [HIV] NCT03946800
+    Immune-deficiency states - myelodysplastic disorders, marrow failure states, human immunodeficiency virus infection, history of solid organ transplant, bone marrow allograft, or active tuberculosis.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+41. [brain metastases] NCT04572308
+    Presence of any symtomatic CNS disorder such as an uncontrolled seizure disorder, cerebrovascular ischemia/hemorrhage, dementia, cerebellar disease, or any autoimmune disease with CNS involvement;
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+42. [HIV] NCT06341907
+    The patient has HIV infection, HBV infection, HCV infection, uncontrolled coronary artery disease or asthma, uncontrolled cerebrovascular disease, or other disease that the investigator considers ineligible;
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+43. [brain metastases] NCT01382706
+    Patients with brain metastasis can only be included if they were treated more than 4 weeks prior to enrollment; subjects with treated brain metastases must have a post treatment brain magnetic resonance imaging (MRI) showing no further progression of prior lesions AND no new metastatic lesions; subjects will be ineligible if they have any ongoing symptoms from brain metastases or if there continue
+  <<< the classifier saw nothing past this point >>>
+    s to be radiographic evidence of cerebral edema
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+44. [prior malignancy] NCT01867892
+    Patients who had non-curable second primary malignancy within five years, except for non-melanoma skin cancer.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+45. [HIV] NCT05419024
+    Active opportunistic infection as defined by the Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+46. [brain metastases] NCT03412955
+    Patient with leptomeningeal only disease, without other measurable brain metastasis, is excluded.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+47. [prior malignancy] NCT06100874
+    Individuals with a history of other malignancies are eligible if they have been disease-free for at least 3 years or are deemed by the investigator to be at low risk for recurrence of that malignancy.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+48. [brain metastases] NCT06756841
+    Patients with active leptomeningeal disease or brain metastasis.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+49. [brain metastases] NCT05275673
+    Patients with symptomatic, active/untreated central nervous system metastasis and/or leptomeningeal disease are not eligible.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+50. [brain metastases] NCT03844750
+    Has known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Participants with previously treated brain metastases may participate provided they are radiologically stable (i.e., without evidence of progression by imaging for at least 4 weeks by repeat imaging \[repeat imaging should be performed during the study screening\]), clinically stable, and without requirement 
+  <<< the classifier saw nothing past this point >>>
+    of steroid treatment for at least 14 days prior to trial treatment. This exception does not include carcinomatous meningitis which is excluded regardless of clinical stability.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+51. [HIV] NCT05495724
+    HIV infected (HIV antibody positive);
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+52. [HIV] NCT01819428
+    Patients with known active hepatitis B, HIV infection, or other uncontrolled infectious disease
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+53. [brain metastases] NCT00634647
+    C. Patients with known active brain metastases are excluded from this clinical trial because of their poor prognosis and because they often develop progressive neurologic dysfunction that would confound the evaluation of neurologic and other adverse events.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+54. [HIV] NCT05609968
+    Has history of human immunodeficiency virus (HIV) infection
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+55. [brain metastases] NCT05130177
+    Patients with leptomeningeal disease are excluded
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+56. [HIV] NCT02737501
+    Have a known history of human immunodeficiency virus (HIV) infection.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+57. [HIV] NCT03108495
+    Participants who have any form of primary immunodeficiency (such as severe combined immunodeficiency \[SCID\] or acquired immunodeficiency syndrome \[AIDS\])
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+58. [hepatitis B/C] NCT01084057
+    Patients with chronic hepatitis B or C are also excluded from this study
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+59. [brain metastases] NCT04770688
+    Spinal cord compression, symptomatic and unstable brain metastases, except for those patients who have completed definitive therapy, and have had a stable neurological status for at least 2 weeks after completion of definitive therapy. Patients may be on corticosteroids to control brain metastases if they have been on a stable dose for 2 weeks (14 days) prior to the start of study treatment and ar
+  <<< the classifier saw nothing past this point >>>
+    e clinically asymptomatic.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+60. [brain metastases] NCT02987166
+    Known active central nervous system (CNS) metastases and/or carcinomatous meningitis. Subjects with untreated brain metastases and patients who have had brain metastases re-treated with radiation will be excluded. Patients whom have either midline shift, or any signs of herniation (even if disease has been treated with GK) will be excluded. Subjects with previously treated brain metastases may par
+  <<< the classifier saw nothing past this point >>>
+    ticipate provided they are 1) stable (without clinical evidence of progression) 2) are out at least 10 days from CNS radiation and 3) and are not using steroids as part of treatment for their brain lesions for at least 7 days prior to trial treatment. This exception does not include carcinomatous meningitis which is excluded regardless of clinical stability.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+61. [brain metastases] NCT02145637
+    Untreated symptomatic brain metastasis
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+62. [HIV] NCT03562637
+    Known history or positive for human immunodeficiency virus (HIV positive), unless on effective anti-retroviral therapy with undetectable viral load within 6 months of therapy (note: HIV testing not required for study entry).
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+63. [HIV] NCT04734990
+    Patients known to be positive for hepatitis B surface antigen expression or with active hepatitis C infection (positive by polymerase chain reaction or on antiviral therapy for hepatitis C within the last 6 months). Patients with history of human immunodeficiency virus (HIV) disease are also excluded from the study
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+64. [prior malignancy] NCT02890615
+    only non-melanoma skin cancer (without any other single primary cancer),
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+65. [prior malignancy] NCT00936611
+    Patients with prior malignancy within the last 5 years (except for basal or squamous cell carcinoma, or in situ cancer of the cervix)
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+66. [HIV] NCT00958386
+    Known positive test for human immunodeficiency virus infection, hepatitis C virus, and chronic active hepatitis B infection.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+67. [HIV] NCT04270175
+    Positive for human immunodeficiency virus (HIV), hepatitis B, and hepatitis C
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+68. [HIV] NCT01264081
+    Human immunodeficiency virus (HIV)-positive patients on antiretroviral therapy are excluded because most antiretrovirals are strong or moderate CYP3A4 inhibitors.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+69. [HIV] NCT01286038
+    Known Human Immunodeficiency Virus (HIV) positive patients. These patients are excluded because they may have morphologic dysplasia which mimics MDS but is not true MDS Tand thrombocytopenia could be multifactorial secondary to HIV infection or to medications.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+70. [brain metastases] NCT01034631
+    No active brain metastases. Patients with neurological symptoms must undergo a head CT scan or brain MRI to exclude brain metastasis within 30 days prior to registration on protocol therapy. NOTE: A patient with prior brain metastasis are eligible if they have completed their radiation treatment for brain metastasis ≥30 days prior to registration for protocol therapy, are off steroids, and are asy
+  <<< the classifier saw nothing past this point >>>
+    mptomatic.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+71. [brain metastases] NCT00914914
+    Brain Metastases, current or past (unless treated at least one year prior to enrollment).
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+72. [brain metastases] NCT01252251
+    Uncontrolled brain or leptomeningeal metastases, including patients who continue to require glucocorticoids for brain or leptomeningeal metastases. Treated brain metastases must have been stable for at least 2 months.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+73. [HIV] NCT01303926
+    Serious concomitant systemic disorder (for example, active infection including human immunodeficiency virus) that, in the opinion of the investigator, would compromise the patient's ability to adhere to the protocol
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+74. [prior malignancy] NCT02915523
+    Another known malignancy that is progressing or requires active treatment (excluding adequately treated basal cell carcinoma or cervical intraepithelial neoplasia/cervical carcinoma in situ or melanoma in situ). Prior history of other cancer is allowed, as long as there is no active disease within the prior 5 years.
+
+    you: ___   (W / C / N / ?)
+
+==============================================================================
+74 items. Mark each `you:` line, then run `trialcriteria score` on this file.

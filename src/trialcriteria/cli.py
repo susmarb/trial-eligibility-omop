@@ -12,7 +12,8 @@ USAGE = """trialcriteria <command> [options]
   cohort [--build]         execute a cohort against an OMOP CDM
   fetch-corpus             build the year-stratified trial corpus (slow, ~90 MB)
   strictness [--limit N]   three-way exclusion classification over the corpus
-  validate --n 90          draw a stratified sample for hand-validation
+  validate --n 74          draw a BLINDED sample for hand-validation
+  score SHEET              score a marked sheet: accuracy, CI, confusion matrix
   config                   print every resolved setting and where it came from
 
 Start with `trialcriteria show NCT03432533`: it needs nothing but a network
@@ -72,6 +73,9 @@ def main(argv=None):
     elif cmd == "validate":
         from . import validate
         validate.main()
+    elif cmd == "score":
+        from . import score
+        score.main()
     else:
         print(USAGE)
         raise SystemExit("unknown command: %s" % cmd)

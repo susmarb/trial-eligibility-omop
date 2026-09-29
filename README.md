@@ -17,7 +17,7 @@ no R, no API key, no patient data.
 ## Quick start
 
 ```bash
-make test        # 29 tests, no network, no model, no data
+make test        # 34 tests, no network, no model, no data
 make tree        # parse one trial and print its logic tree
 make cohort      # download a reference CDM and execute a cohort on it
 ```
@@ -102,7 +102,8 @@ python3 -c "import platform; print(platform.machine())"   # must print arm64
 | `trialcriteria cohort [--build]` | execute a cohort on a CDM | a CDM (`make cdm`) |
 | `trialcriteria fetch-corpus` | build the 2008-2024 corpus (~90 MB) | network, patience |
 | `trialcriteria strictness` | three-way exclusion classification | corpus, classifier |
-| `trialcriteria validate --n 90` | stratified hand-validation sample | classifier output |
+| `trialcriteria validate --n 74` | draw a blinded hand-validation sheet | classifier output |
+| `trialcriteria score SHEET` | accuracy, interval, confusion matrix | a marked sheet |
 | `trialcriteria config` | print every resolved setting | nothing |
 
 ## Configuration
@@ -127,8 +128,9 @@ src/trialcriteria/
   cohort.py       an anchored tree executed as SQL
   classifier.py   the local model, behind one contract
   strictness.py   three-way exclusion classification over a corpus
-  validate.py     stratified hand-validation sampler
-tests/            29 tests: the parser, Kleene logic, threshold predicates
+  validate.py     blinded hand-validation sampler
+  score.py        scores a marked sheet: accuracy, CI, confusion matrix
+tests/            34 tests: the parser, Kleene logic, threshold predicates
 data/validation/  a drawn sample awaiting human marking  <- see its README
 attic/            analyses that did not survive, kept so they are not redone
 ```

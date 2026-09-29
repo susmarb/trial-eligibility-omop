@@ -113,7 +113,10 @@ def main():
             continue
         out.append({"year": y, "topic": topic, "nct": nct,
                     "label": res["choice"], "conf": res.get("confidence"),
-                    "text": text[:160]})
+                    # store exactly what the model was shown. Truncating further
+                    # cuts the end of the sentence, which is where an escape
+                    # hatch lives, and makes hand-validation unmarkable.
+                    "text": text})
         if i % 2000 == 0:
             el = time.time() - t0
             print("  %d/%d  %.0f/s  eta %.0f min"
